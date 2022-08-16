@@ -17,7 +17,6 @@ impl Plugin for BallPlugin {
         )
         .add_system(ball_despawn_system)
         .add_system(ball_speed_control_system)
-        //.add_system_to_stage(CoreStage::PostUpdate, ball_collision_system)
         .insert_resource(BallCounter(0));
     }
 }
